@@ -1,19 +1,17 @@
-const util = require("util");
-const mysql = require("mysql");
+const mysql = require("mysql2");
+const util = require('util');
 
-const connection = mysql.createConnection({
-  host: "localhost",
-  // Your username
-  user: "root",
-  // Your password
-  password: "",
-  database: "employees"
-});
+const db = mysql.createConnection(
+  {
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "employees",
+  },
+  console.log("Connected to the Employee Tracking database.")
+);
 
-connection.connect();
-
-// Setting up connection.query to use promises instead of callbacks
 // This allows us to use the async/await syntax
-connection.query = util.promisify(connection.query);
+db.query = util.promisify(db.query);
 
-module.exports = connection;
+module.exports = db;
