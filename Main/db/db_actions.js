@@ -81,11 +81,12 @@ function updateEmployeeRole(employeeId, newRoleId) {
   return db.query('UPDATE employees SET role_id = ? WHERE employee_id = ?', [newRoleId, employeeId]);
 }
 
-viewAllEmployees()
-  .then(results => {
-    console.log(results);
-    console.log('this ran');
-  })
-  .catch(error => {
-    console.error(error);
-  });
+module.exports = {
+  viewAllDepartments,
+  viewAllRoles,
+  viewAllEmployees,
+  addDepartment,
+  addRole,
+  addEmployee,
+  updateEmployeeRole
+};
