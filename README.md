@@ -7,7 +7,8 @@
 - [Questions](#questions)
 
 ## Description
-This is a commandline application that uses inquierer and a mysql database. You can create departments, roles, and employees. Then track their salaries. It's relational DB 
+This is a commandline application that uses inquierer and a mysql database. You can create departments, roles, and employees. Then track their salaries.
+
 Video:
 https://drive.google.com/file/d/1wTpAptso831LuZxqz2vST1vxfoGlkCzq/view
 
