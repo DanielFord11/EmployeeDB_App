@@ -12,7 +12,7 @@ Video:
 https://drive.google.com/file/d/1wTpAptso831LuZxqz2vST1vxfoGlkCzq/view
 
 ## Installation
-CLone this Repo then follow the video instrucitons to create the db, load it, then launch the command prompt
+Clone this Repo then follow the video instrucitons to create the db, load it, then launch the command prompt
 
 
 ## Usage
